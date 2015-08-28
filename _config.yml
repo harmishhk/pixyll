@@ -7,10 +7,6 @@ baseurl:     ""
 url:         "http://pixyll.com"
 date_format: "%b %-d, %Y"
 
-# Google services
-google_analytics:
-google_verification:
-
 # Optional features
 animated:           false
 show_related_posts: false
@@ -26,7 +22,6 @@ github_username:
 bitbucket_username:
 stackoverflow_id:
 twitter_username:
-google_plus_id:
 linkedin_username:
 angellist_username:
 medium_id:
@@ -40,7 +35,6 @@ share_text: 'Share this post!'
 # Change to 'true' to enable individual icons
 share_facebook: false
 share_twitter: false
-share_googleplus: false
 share_linkedin: false
 share_digg: false
 share_tumblr: false
