@@ -5,13 +5,9 @@ layout: default
 <div class="home">
 
   <div class="posts">
-    {% for post in paginator.posts %}
+    {% for post in site.sorted_posts %}
       <div class="post py3">
-        {% if page.update_date %}
-          <p class="post-meta">{{ post.update_date | date: site.date_format }}</p>
-        {% else %}
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-        {% endif %}
+        <p class="post-meta">{{ post.date | date: site.date_format }}</p>
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
         <p class="post-summary">
           {% if post.summary %}
@@ -24,5 +20,4 @@ layout: default
     {% endfor %}
   </div>
 
-  {% include pagination.html %}
 </div>
